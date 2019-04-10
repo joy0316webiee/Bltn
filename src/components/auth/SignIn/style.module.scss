@@ -1,0 +1,54 @@
+@import "../../constants/contants.scss";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+
+  .landing {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+
+  .form {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding: 107px 58px 100px 41px;
+
+    h2 {
+      font-weight: 400;
+      font-size: 27px;
+      color: color(black-primary);
+      margin: 0px;
+    }
+
+    .splitter {
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+      color: color(grey-primary);
+    }
+
+    .withEmail {
+      h3 {
+        font-weight: 400;
+        font-size: 17px;
+        color: color(grey-primary);
+      }
+    }
+
+    .forgot {
+      text-align: right;
+      padding: 5px;
+
+      a {
+        text-decoration: none;
+        font-size: 12px;
+        color: color(blue-primary);
+      }
+    }
+  }
+}

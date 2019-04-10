@@ -1,0 +1,23 @@
+@import "./components/constants/contants.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 900px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: font(Roboto);
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+div {
+  border: 1px solid grey;
+}

@@ -1,0 +1,54 @@
+@import "../../constants/contants.scss";
+
+.container {
+  h3 {
+    font-weight: 400;
+    font-size: 17px;
+    color: color(grey-primary);
+  }
+
+  .btnGoogle {
+    cursor: pointer;
+    display: flex;
+    border: 1px solid color(blue-light);
+    border-radius: 4px;
+    width: 100%;
+
+    .googleMark {
+      flex: 1;
+      padding: 4px 10px;
+      text-align: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .btnLabel {
+      flex: 9;
+      text-align: center;
+      padding: 4px;
+      background-color: color(blue-light);
+
+      span {
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+
+    &:hover {
+      .googleMark {
+        background-color: color(grey-primary);
+      }
+      .btnLabel {
+        background-color: color(white);
+        border-left: 1px solid color(blue-light);
+        span {
+          color: color(blue-light);
+        }
+      }
+    }
+  }
+}

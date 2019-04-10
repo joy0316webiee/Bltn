@@ -1,0 +1,29 @@
+$colors: (
+  no-color: transparent, 
+  white: #ffffff,
+  blue-primary: #5951ff,
+  blue-light: #4b79ff,
+  blue-lighter: #817bff,
+  black-primary: #201c3b,
+  grey-light: #c3c3c3,
+  grey-primary: #bdbdbd,
+);
+
+$sizes: (
+);
+
+$fonts: (
+  Roboto: ('Roboto-Regular', sans-serif),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function size($size-name) {
+  @return map-get($sizes, $size-name);
+}
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
