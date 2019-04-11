@@ -5,7 +5,8 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 // Components
-import SignIn from "./components/auth/SignIn";
+import SignIn from "./pages/auth/SignIn";
+import SignUp from "./pages/auth/SignUp";
 
 import './App.scss';
 
@@ -16,6 +17,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <Route exact path="/" component={SignIn} />
+            <Route exact path="/signup" component={SignUp} />
           </div>
         </Router>
       </Provider>
